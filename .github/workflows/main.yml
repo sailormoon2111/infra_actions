@@ -41,8 +41,8 @@ jobs:
       - name: Login to Docker 
         uses: docker/login-action@v1 
         with:
-          username: <mariavan88_dockerhub> 
-          password: <211188van_dockerhub>
+          username: mariavan88
+          password: 211188van
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2 
         with:
