@@ -41,10 +41,10 @@ jobs:
       - name: Login to Docker 
         uses: docker/login-action@v1 
         with:
-          username: mariavan88
-          password: 211188van
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASS }}
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: mariavan88/infra_actions:latest 
+          tags: mariavan88/infra_actions:latest
